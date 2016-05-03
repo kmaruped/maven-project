@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 		<spring:bean id="Bean" name="Bean" class="com.mulesoft.training.Database" />
 	</spring:beans>
 
-	<http:listener-config name="HTTPList" host="localhost" port="8088" doc:name="HTTP Listener Configuration" />
+	<http:listener-config name="HTTPList" host="localhost" port="${http.port}" doc:name="HTTP Listener Configuration" />
 
 	<db:derby-config name="Derby_Configuration" url="jdbc:derby:memory:muleEmbeddedDB;create=true" doc:name="Derby Configuration" />
 
